@@ -1,0 +1,175 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    color: white;
+}
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border: 3px white solid;
+}
+.container:hover{
+    box-shadow: white 20px 20px 20px 10px ;
+    transition-duration: 1s;
+}
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+input{
+    display: none;
+}
+.bar{
+    background-color: white;
+    width: 10px;
+    height: 30px;
+    margin: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bar:hover{
+    background-color: aqua;
+    transform: translateY(-3px);
+    transition-duration: 1s;
+}
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    display: flex;
+    transform: translate(75%);
+}
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+.imagem{
+    width: 16.6666666667%;
+    transition: ease-in-out all 1s;
+}
+#imagem1:checked ~ .img1 {
+    margin-left:0%;
+}
+#imagem2:checked ~ .img1 {
+    margin-left:-12.5%;
+}
+#imagem3:checked ~ .img1 {
+    margin-left:-25%;
+}
+#imagem4:checked ~ .img1 {
+    margin-left:-37.5%;
+}
+#imagem5:checked ~ .img1 {
+    margin-left:-50%;
+}
+#imagem6:checked ~ .img1 {
+    margin-left:-75%;
+}
+#imagem7:checked ~ .img1{
+    margin-left:-87.5%;
+}
+#imagem8:checked ~ .img1{
+    margin-left: -100%;
+}
+footer{
+    color: white;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    left: 43%;
+    font-size: 1.5em;
+}
+header{
+    justify-content: center;
+    display: flex;
+}
+.imagem:hover{
+    transition-duration: 1s;
+    transition: ease-in-out all;
+}
+header h1:hover{
+    transition-duration: 1s;
+    box-shadow: white 50px 10px 40px 10px ;
+    border: #6d6868fe 2px solid;
+}
+
+
+/* responsividade de a12 */
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 3em; 
+    }
+
+    .container {
+        width: 90%; 
+        height: 40%;
+        border: none;}
+
+    .imagem {
+        width: 100%;
+        margin-left: 0; 
+        
+
+    }
+
+    .navegacao{
+        position: absolute;
+    bottom: -2px;
+    left: -90%;
+    display: flex;
+    margin-left: 76%;
+     margin-right: 3px;
+    }
+
+
+    footer{
+        margin-right:10px;
+        display: flex;
+        
+        
+    }
+    
+
+    
+    .imagem{
+        width: 16.6666666667%;
+        transition: ease-in-out all 1s;}
+#imagem1:checked ~ .img1{
+    margin-left:-0.00712719294%;}
+
+#imagem2:checked ~ .img1 {
+    margin-left:-12.5%;
+}
+#imagem3:checked ~ .img1 {
+    margin-left:-25%;
+}
+#imagem4:checked ~ .img1 {
+    margin-left:-37.5%;
+}
+#imagem5:checked ~ .img1 {
+    margin-left:-50%;
+}
+#imagem6:checked ~ .img1 {
+    margin-left:-75%;
+}
+#imagem7:checked ~ .img1{
+    margin-left:-87.5%;
+}
+#imagem8:checked ~ .img1{
+    margin-left: -100%;
+}}
